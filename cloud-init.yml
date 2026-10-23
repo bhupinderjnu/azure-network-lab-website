@@ -1,0 +1,13 @@
+#cloud-config
+package_update: true
+packages:
+  - nginx
+  - git
+write_files:
+  - path: /etc/cron.d/website-deploy
+    permissions: '0644'
+    content: |
+      */2 * * * * root /bin/bash /opt/website/deploy.sh >> /var/log/website-deploy.log 2>&1
+runcmd:
+  - git clone https://github.com/bhupinderjnu/azure-network-lab-website.git /opt/website
+  - /bin/bash /opt/website/deploy.sh

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure Network Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Azure Network Lab</h1>
+    <p>NAT Gateway · User-defined routes · VM Scale Set · GitHub</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Served by</h2>
+      <p class="big">{{HOSTNAME}}</p>
+      <p>Refresh the page: the load balancer sends you to different instances.</p>
+    </section>
+    <section class="card">
+      <h2>Deployed version</h2>
+      <p class="big">{{COMMIT}}</p>
+      <p>Deployed at {{DEPLOYED}}</p>
+    </section>
+    <section class="card">
+      <h2>How this page got here</h2>
+      <ol>
+        <li>Code pushed from a Windows laptop to GitHub</li>
+        <li>Private Ubuntu VMs pulled it through the NAT gateway</li>
+        <li>Nginx serves it behind an Azure Load Balancer</li>
+      </ol>
+    </section>
+  </main>
+  <footer>Version 1</footer>
+</body>
+</html>

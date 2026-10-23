@@ -1,0 +1,8 @@
+body { margin: 0; font-family: Segoe UI, Arial, sans-serif; background: #f4f7fb; color: #1c2333; }
+header { background: #14213d; color: #fff; padding: 32px 24px; text-align: center; }
+header h1 { margin: 0 0 8px; }
+main { max-width: 960px; margin: 24px auto; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); padding: 0 16px; }
+.card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+.card h2 { margin-top: 0; color: #0f7c8c; font-size: 18px; }
+.big { font-size: 26px; font-weight: 700; color: #d9692b; word-break: break-all; }
+footer { text-align: center; padding: 24px; color: #5b6b85; }
